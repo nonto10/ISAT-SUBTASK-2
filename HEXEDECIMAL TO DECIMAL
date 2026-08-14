@@ -1,0 +1,68 @@
+   decimal = int(input("Enter a decimal integer: "))
+
+                if decimal < 0:
+                    print("Please enter a positive integer.")
+                else:
+                    binary = decimal_to_binary(decimal)
+                    print("Binary equivalent:", binary)
+
+            except ValueError:
+                print("Invalid input. Please enter an integer.")
+
+        # Binary to Decimal
+        elif choice == "2":
+            binary = input("Enter a binary number: ")
+
+            try:
+                decimal = binary_to_decimal(binary)
+                print("Decimal equivalent:", decimal)
+
+            except ValueError:
+                print("Invalid binary number. Use only 0 and 1.")
+
+        # Decimal to Hexadecimal
+        elif choice == "3":
+            try:
+                decimal = int(input("Enter a decimal integer: "))
+
+                if decimal < 0:
+                    print("Please enter a positive integer.")
+                else:
+                    hexadecimal = decimal_to_hexadecimal(decimal)
+                    print("Hexadecimal equivalent:", hexadecimal)
+
+            except ValueError:
+                print("Invalid input. Please enter an integer.")
+
+        # Hexadecimal to Decimal
+        elif choice == "4":
+            hexadecimal = input("Enter a hexadecimal number: ")
+
+            try:
+                decimal = hexadecimal_to_decimal(hexadecimal)
+                print("Decimal equivalent:", decimal)
+
+            except ValueError:
+                print("Invalid hexadecimal number.")
+
+        # Demo
+        elif choice == "5":
+            random_number = random.randint(0, 99)
+            binary = decimal_to_binary(random_number)
+
+            print("\n--- DEMO ---")
+            print("Random decimal number:", random_number)
+            print("Binary equivalent:", binary)
+
+        # Exit
+        elif choice == "6":
+            print("Thank you for using the conversion program.")
+            print("Goodbye!")
+            break
+
+        # Invalid menu option
+        else:
+            print("Invalid choice. Please select an option from 1 to 6.")
+
+
+# Start the program
