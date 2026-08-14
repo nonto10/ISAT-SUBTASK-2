@@ -1,0 +1,42 @@
+import random
+
+
+# Function 1: Decimal to Binary
+def decimal_to_binary(decimal):
+    return bin(decimal)[2:]
+
+
+# Function 2: Binary to Decimal
+def binary_to_decimal(binary):
+    return int(binary, 2)
+
+
+# Function 3: Decimal to Hexadecimal
+def decimal_to_hexadecimal(decimal):
+    return hex(decimal)[2:].upper()
+
+
+# Function 4: Hexadecimal to Decimal
+def hexadecimal_to_decimal(hexadecimal):
+    return int(hexadecimal, 16)
+
+
+# Display the menu
+def display_menu():
+    print("\n==============================")
+    print("       CONVERSION MENU")
+    print("==============================")
+    print("1. Convert Decimal to Binary")
+    print("2. Convert Binary to Decimal")
+    print("3. Convert Decimal to Hexadecimal")
+    print("4. Convert Hexadecimal to Decimal")
+    print("5. Demo - Generate and convert random integer")
+    print("6. Exit")
+    print("==============================")
+
+
+# Main program
+def main():
+    while True:
+        display_menu()
+
